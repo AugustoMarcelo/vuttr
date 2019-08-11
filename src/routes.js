@@ -1,15 +1,13 @@
 const express = require('express');
 
-const routes = express.Router();
+const ToolController = require('./app/controllers/ToolController');
 
-routes.get('/', (request, response) => {
-  return response.status(200).send({ message: 'Success' });
-});
+const routes = express.Router();
 
 // GET /tools
 // GET /tools?tag=
 
-// POST /tools
+routes.post('/tools', ToolController.store);
 
 // DELETE /tools/:id
 
