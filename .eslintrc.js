@@ -3,6 +3,7 @@ module.exports = {
     commonjs: true,
     es6: true,
     node: true,
+    jest: true
   },
   extends: [
     'airbnb-base',
@@ -20,7 +21,7 @@ module.exports = {
     "prettier/prettier": ["error", { "endOfLine": "auto" }],
     "class-methods-use-this": "off",
     "no-param-reassign": "off",
-    "camelcase": "off",
+    camelcase: "off",
     "no-unused-vars": ["error", { "argsIgnorePattern": "next" }]
   },
 };
